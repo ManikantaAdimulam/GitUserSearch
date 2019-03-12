@@ -15,7 +15,6 @@ import DashBoard from "./Source/Components/DashBoard";
 const Store = configureStore();
 export default class App extends Component {
   render() {
-    console.log(Store);
     return (
       <Provider store={Store}>
         <DashBoard />

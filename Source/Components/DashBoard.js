@@ -23,7 +23,7 @@ class DashBoard extends Component {
   }
 
   componentDidMount() {
-      this.requestUser()
+    this.requestUser();
   }
   renderItem = ({ name, description }) => {
     return (
@@ -39,28 +39,37 @@ class DashBoard extends Component {
   };
 
   requestUser = () => {
-    const {dispatch} = this.props
-    dispatch(NetworkManager.request(API.getUser(this.state.user), httpMethods.get)).then(response =>{
-        dispatch(getUserData(response))
-        NetworkManager.request(API.getUserRepos)
-    }).catch(error => {
-        console.log(error)
-    })
-  }
+    const { dispatch } = this.props;
+    NetworkManager.request(API.getUser(this.state.user), httpMethods.get)
+      .then(response => {
+        console.log(response);
+        NetworkManager.request(API.getUserRepos);
+        dispatch(getUserData(response));
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
 
   requestUserRepos = () => {
-    const {dispatch} = this.props
-    dispatch(NetworkManager.request(API.getUserRepos(this.state.user), httpMethods.get)).then(response =>{
-        dispatch(getUserData(response))
-    }).catch(error => {
-        console.log(error)
-    })
-  }
-  render() {
+    const { dispatch } = this.props;
 
+    NetworkManager.request(API.getUserRepos(this.state.user), httpMethods.get)
+
+      .then(response => {
+        console.log(response);
+        dispatch(getUserData(response));
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+  render() {
     const { avatarUrl, name, repos, isSuccess } = this.props;
-    if (avatarUrl == "" && description == "" && !isSuccess) {
-        <View style={styles.container}><Text>User not found</Text></View>
+    if (avatarUrl == "" && name == "" && !isSuccess) {
+      <View style={styles.container}>
+        <Text>User not found</Text>
+      </View>;
     } else {
       return (
         <View style={styles.container}>
