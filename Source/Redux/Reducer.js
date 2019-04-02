@@ -1,4 +1,4 @@
-import { Actions } from "./ActionCreators";
+import { GET_USER, GET_USER_REPOS } from "./ActionCreators";
 
 const initialState = {
   name: "",
@@ -9,17 +9,17 @@ const initialState = {
 
 export function reducer(state = initialState, action) {
   switch (action.type) {
-    case Actions.GET_USER:
+    case GET_USER:
       return {
         ...state,
-        name: action.data.name,
-        avatarUrl: action.data.avatar_url,
-        message: action.data.message !== undefined ? false : true
+        name: action.data.data.name,
+        avatarUrl: action.data.data.avatar_url,
+        message: action.data.data.message !== undefined ? false : true
       };
-    case Actions.GET_USER_REPOS:
+    case GET_USER_REPOS:
       return {
         ...state,
-        repos: action.data.map(repo => {
+        repos: action.data.data.map(repo => {
           return {
             name: repo.name,
             description: repo.description

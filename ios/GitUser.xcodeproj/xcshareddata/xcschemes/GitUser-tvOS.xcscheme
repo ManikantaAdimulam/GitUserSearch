@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "GitUserSearch-tvOS.app"
-               BlueprintName = "GitUserSearch-tvOS"
-               ReferencedContainer = "container:GitUserSearch.xcodeproj">
+               BuildableName = "GitUser-tvOS.app"
+               BlueprintName = "GitUser-tvOS"
+               ReferencedContainer = "container:GitUser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "GitUserSearch-tvOSTests.xctest"
-               BlueprintName = "GitUserSearch-tvOSTests"
-               ReferencedContainer = "container:GitUserSearch.xcodeproj">
+               BuildableName = "GitUser-tvOSTests.xctest"
+               BlueprintName = "GitUser-tvOSTests"
+               ReferencedContainer = "container:GitUser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "GitUserSearch-tvOSTests.xctest"
-               BlueprintName = "GitUserSearch-tvOSTests"
-               ReferencedContainer = "container:GitUserSearch.xcodeproj">
+               BuildableName = "GitUser-tvOSTests.xctest"
+               BlueprintName = "GitUser-tvOSTests"
+               ReferencedContainer = "container:GitUser.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "GitUserSearch-tvOS.app"
-            BlueprintName = "GitUserSearch-tvOS"
-            ReferencedContainer = "container:GitUserSearch.xcodeproj">
+            BuildableName = "GitUser-tvOS.app"
+            BlueprintName = "GitUser-tvOS"
+            ReferencedContainer = "container:GitUser.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "GitUserSearch-tvOS.app"
-            BlueprintName = "GitUserSearch-tvOS"
-            ReferencedContainer = "container:GitUserSearch.xcodeproj">
+            BuildableName = "GitUser-tvOS.app"
+            BlueprintName = "GitUser-tvOS"
+            ReferencedContainer = "container:GitUser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "GitUserSearch-tvOS.app"
-            BlueprintName = "GitUserSearch-tvOS"
-            ReferencedContainer = "container:GitUserSearch.xcodeproj">
+            BuildableName = "GitUser-tvOS.app"
+            BlueprintName = "GitUser-tvOS"
+            ReferencedContainer = "container:GitUser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

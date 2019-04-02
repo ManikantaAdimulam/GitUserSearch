@@ -1,22 +1,27 @@
-const Actions = {
-  GET_USER: "GET_USER",
-  GET_USER_REPOS: "GET_USER_REPOS",
-  GET_DATA: "GET_DATA",
-  GET_DATA_FAILURE: "GET_DATA_FAILURE"
-};
+const GET_USER = "GET_USER";
+const GET_USER_REPOS = "GET_USER_REPOS";
+const GET_DATA = "GET_DATA";
+const GET_DATA_FAILURE = "GET_DATA_FAILURE";
 
 const getUserData = data => {
   return {
-    type: Actions.GET_USER,
+    type: GET_USER,
     data
   };
 };
 
 const getUserRepos = data => {
   return {
-    type: Actions.GET_USER_REPOS,
+    type: GET_USER_REPOS,
     data
   };
 };
 
-export { Actions, getUserData, getUserRepos };
+export {
+  GET_DATA,
+  GET_DATA_FAILURE,
+  GET_USER,
+  GET_USER_REPOS,
+  getUserData,
+  getUserRepos
+};

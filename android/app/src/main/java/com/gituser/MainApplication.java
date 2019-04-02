@@ -1,4 +1,4 @@
-package com.gitusersearch;
+package com.gituser;
 
 import android.app.Application;
 
